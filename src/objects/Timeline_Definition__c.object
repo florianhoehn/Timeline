@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>holds all information about one sObject definition for a timeline</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <fields>
+        <fullName>Field_API_Names__c</fullName>
+        <description>holds all API names of the fields to be selected</description>
+        <externalId>false</externalId>
+        <label>Field API Names</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Id</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Record_Type_Name__c</fullName>
+        <description>holds record type name to be selected</description>
+        <externalId>false</externalId>
+        <label>Record Type Name</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Timeline_Date_API_Name__c</fullName>
+        <description>holds API name of the date that is used for the timeline</description>
+        <externalId>false</externalId>
+        <label>Timeline Date API Name</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Timeline__c</fullName>
+        <description>Master-Detail relationship to Timeline record</description>
+        <externalId>false</externalId>
+        <label>Timeline</label>
+        <referenceTo>Timeline__c</referenceTo>
+        <relationshipLabel>Timeline Definition</relationshipLabel>
+        <relationshipName>Timeline</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>sObject_API_Name__c</fullName>
+        <description>holds API name of the sObject to be selected</description>
+        <externalId>false</externalId>
+        <label>sObject API Name</label>
+        <length>50</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Timeline Definition</label>
+    <nameField>
+        <displayFormat>TDN-{00000}</displayFormat>
+        <label>Timeline Definition Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Timeline Definition</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>
