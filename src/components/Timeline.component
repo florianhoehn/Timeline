@@ -1,0 +1,15 @@
+<!--
+* @author Florian Hoehn
+* @date 11/05/2014
+* @description Timeline component
+-->
+<apex:component controller="TimelineController" layout="none">
+  <apex:attribute name="timelineObjectName" type="String" required="true" description="" assignTo="{!timelineName}"/>
+  <apex:attribute name="timelineObjectParentId" type="Id" required="true" description="" assignTo="{!timelineParentId}"/>
+
+  {!doThis}
+
+  <apex:repeat value="{!timelineItems}" var="timelineItem">
+    {!timelineItem}
+  </apex:repeat>
+</apex:component>

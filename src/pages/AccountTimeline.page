@@ -1,0 +1,3 @@
+<apex:page standardController="Account">
+  <c:Timeline timelineObjectName="TEST" timelineObjectParentId="{!Account.Id}"></c:Timeline>
+</apex:page>

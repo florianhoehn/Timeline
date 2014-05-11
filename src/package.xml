@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>TimelineController</members>
+        <members>TimelineItem</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Timeline</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>AccountTimeline</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
         <members>Timeline_Definition__c</members>
         <members>Timeline__c</members>
         <name>CustomObject</name>
